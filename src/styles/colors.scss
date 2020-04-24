@@ -1,0 +1,62 @@
+@import "~@angular/material/theming";
+@include mat-core();
+
+$color-background: #ffffff;
+
+$color-gray: (
+  50 : #e6e6e6,
+  100 : #bfbfbf,
+  200 : #959595,
+  300 : #6b6b6b,
+  400 : #4b4b4b,
+  500 : #2b2b2b,
+  600 : #262626,
+  700 : #202020,
+  800 : #1a1a1a,
+  900 : #101010,
+  A100 : #ee6969,
+  A200 : #e93b3b,
+  A400 : #f10000,
+  A700 : #d80000,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$color-primary: (
+  50: #ffefe1,
+  
+  A100: #ffffff,
+  A200: #fff1ed,
+  A400: #ffc9ba,
+  A700: #ffb5a1,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);

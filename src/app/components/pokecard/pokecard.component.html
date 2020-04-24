@@ -1,0 +1,35 @@
+<mat-card matRipple
+  class="poke-card"
+  [class]="backgroundColor">
+  <mat-progress-spinner class="poke-card-progressbar"
+    *ngIf="!imageUrl" 
+    [mode]="'indeterminate'">
+  </mat-progress-spinner>
+  <div class="poke-card-header"> 
+    <span class="poke-card-header-name">
+      {{ name | titlecase }}
+    </span>
+    <span class="poke-card-header-number">
+      <span>#</span>{{ order | number: '3.0-9'}}
+    </span>
+  </div>
+  <div class="poke-card-image">
+    <img [src]="imageUrl">
+  </div>
+  <div class="poke-card-foot">
+    <div class="poke-card-foot-container">
+      <p class="poke-card-foot-container-description">
+        <span class="poke-card-foot-container-description-title">
+          {{'card.skillLabel' | translate}} 
+        </span>
+        <span>{{ mainSkill }}</span>
+      </p>
+      <div class="poke-card-foot-container-mat-icon">
+        <mat-chip-list  
+          *ngFor="let specie of species">
+          <mat-chip>{{ specie | uppercase }}</mat-chip>
+        </mat-chip-list>
+      </div>
+    </div>
+  </div>
+</mat-card>

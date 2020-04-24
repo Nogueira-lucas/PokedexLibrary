@@ -1,0 +1,135 @@
+
+.poke-card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  animation: fadeIn 1s;
+  cursor: pointer;
+  
+  &-progressbar {
+    margin: 0 auto;
+  }
+
+  &-background {
+
+    &-black {
+      background-color: rgba(56, 54, 54, 0.502);
+    }
+
+    &-blue {
+      background-color: rgba(23, 96, 207, 0.502);
+    }
+
+    &-green {
+      background-color: rgba(44, 95, 37, 0.502);
+    }    
+
+    &-brown {
+      background-color: rgba(77, 46, 5, 0.502);
+    }
+
+    &-gray {
+      background-color: rgba(122, 131, 121, 0.502);
+    }
+
+    &-pink {
+      background-color: rgba(221, 67, 221, 0.502);
+    }
+
+    &-purple {
+      background-color: rgba(112, 28, 112, 0.502);
+    }
+
+    &-red {
+      background-color: rgba(230, 16, 8, 0.502);
+    }
+
+    &-white {
+      background-color: rgba(255, 255, 255);
+    }
+
+    &-yellow {
+      background-color: rgba(150, 136, 15, 0.502);
+    }
+
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &-name {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &-number {
+      font-size: 12px;
+      color: rgb(0, 0, 0);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  }
+
+  &-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 200px;
+    }
+  }
+
+  &-foot {
+
+    &-container {
+      margin: -10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 8px;
+      border-radius: 5px;
+      background-color: rgba(#000000, 0.5);
+      color: #fff;
+
+      &-description {
+        line-height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: 0.9em;
+
+        &-title {
+          font-weight: bold;
+          margin-right: 5px;
+        }
+      }
+
+      &-mat-icon {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+::ng-deep .mat-standard-chip {    
+  min-height: 10px !important;
+  height: 10px !important;
+  font-size: 10px !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    top: -10px;
+  }to {
+    opacity: 1;
+    top: 0;
+  }
+}

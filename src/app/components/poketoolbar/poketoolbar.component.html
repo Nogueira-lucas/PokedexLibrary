@@ -1,0 +1,23 @@
+<mat-toolbar 
+  *ngIf="isVisible"
+  class="poketoolbar-toolbar">
+  <div>
+    <span class="poketoolbar-toolbar-firstWorld">
+      {{ 'toolbar.title' | translate }}
+    </span>
+    <span class="poketoolbar-toolbar-secondWorld">
+      {{ 'toolbar.subtitle' | translate }}
+    </span>
+  </div>
+  <div class="poketoolbar-toolbar-options">
+    <mat-button-toggle-group 
+      class="poketoolbar-toolbar-options-button">
+      <mat-button-toggle (click)="setLanguage('en')">
+        <img src="../../../assets/images/logos/united_kingdom.png" alt="english">
+      </mat-button-toggle>
+      <mat-button-toggle (click)="setLanguage('pt')">
+        <img src="../../../assets/images/logos/brazil.png" alt="brazil">
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+</mat-toolbar>

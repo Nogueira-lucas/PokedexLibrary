@@ -1,0 +1,52 @@
+
+
+.poketoolbar-toolbar {
+  font-family: "Roboto";
+  animation: fadeInTop 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #424242;
+  color: #fff;
+
+  &-options {
+    
+    &-button {
+      background-color: #424242;
+    }
+
+    img {
+      width: 50px;
+      height: 30px;
+    }
+  }
+
+  &-firstWorld {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 56, 211);
+    font-size: 1em;
+    color: rgb(251, 255, 0);
+    margin: 0;
+    padding: 0;
+  }
+  
+  &-secondWorld {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 56, 211);
+    font-size: 1em;
+    color: rgb(251, 255, 0);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@keyframes fadeInTop {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0
+  }
+}

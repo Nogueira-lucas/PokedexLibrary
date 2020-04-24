@@ -1,0 +1,14 @@
+<div class="pokemon-list-search_bar_initial">
+  <form class="pokemon-list-search_bar_initial-form">
+    <mat-form-field 
+      class="pokemon-list-search_bar_initial-form-field">
+      <mat-label>
+        <span>Pokemon.lib</span>
+      </mat-label>
+      <input matInput 
+        placeholder="Ex.: 'Picachu'"
+        [formControl]="name"
+        (keyup)="emitName()">
+    </mat-form-field>
+  </form>
+</div> 

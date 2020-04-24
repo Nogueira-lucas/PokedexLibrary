@@ -1,0 +1,36 @@
+
+.pokemon_storage {
+  
+  &-controllers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-left: 20px; 
+
+    &-input {
+      width: 350px;
+    }
+  }
+
+  &-card-panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+
+    &-item {
+      margin: 5px
+    }
+  }
+
+  &-footer {
+    margin-top: 5px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    min-height: 36px;
+  }
+}

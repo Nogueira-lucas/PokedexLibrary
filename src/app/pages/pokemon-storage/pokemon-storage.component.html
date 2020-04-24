@@ -1,0 +1,32 @@
+<poke-toolbar></poke-toolbar>
+<main class="pokemon_storage">
+  <div class="pokemon_storage-controllers">
+    <mat-form-field class="pokemon_storage-controllers-input">
+      <mat-label>{{'storage.searchInput' | translate }}</mat-label>
+      <input #pokemonName disabled
+        matInput 
+        placeholder="Ex. Jiglypuff" 
+        (keyup)="searchPokemon(pokemonName.value)">
+    </mat-form-field>
+    <mat-paginator 
+    (page)="changePage($event)"
+    [hidePageSize]="true"
+    [showFirstLastButtons]="false"
+    [length]="count"
+    [pageIndex]="index"
+    [pageSize]="limit"
+    [pageSizeOptions]="pageOptions">
+    </mat-paginator> 
+  </div> 
+  <mat-progress-bar *ngIf="isLoading" mode="indeterminate"></mat-progress-bar>
+  <div class="pokemon_storage-card-panel" *ngIf="results">
+    <poke-card-component class="pokemon_storage-card-panel-item"
+      *ngFor="let pokemon of results"
+      [url]="pokemon.url"
+      (nameSubmitted)="searchPokemon($event)">
+    </poke-card-component>
+  </div>
+</main>
+<footer class="pokemon_storage-footer">
+  <span>{{'storage.copyRightsPrimary' | translate }}&copy; {{ 'storage.copyRightsSecond' | translate}}</span>
+</footer>
