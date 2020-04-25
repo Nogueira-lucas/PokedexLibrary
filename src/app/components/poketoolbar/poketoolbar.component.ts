@@ -10,8 +10,8 @@ import { PokemonTranslationService } from 'src/app/services/translations/transla
 export class PokeToolbarComponent {
   @Input() isVisible: boolean = true;
 
-  english_logo_img: string = '/src/assets/images/logos/united_kingdom.png';
-  brazilian_logo_img: string = '/src/assets/images/logos/brazil.png';
+  english_logo_img: string = '/assets/images/logos/united_kingdom.png';
+  brazilian_logo_img: string = '/assets/images/logos/brazil.png';
 
   constructor(private translate: TranslateService) {}
 
