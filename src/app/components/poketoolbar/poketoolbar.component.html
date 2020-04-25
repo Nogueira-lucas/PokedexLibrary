@@ -13,10 +13,10 @@
     <mat-button-toggle-group 
       class="poketoolbar-toolbar-options-button">
       <mat-button-toggle (click)="setLanguage('en')">
-        <img [src]="english_logo_img" alt="english">
+        <span>{{'toolbar.language.english' | translate }}</span>
       </mat-button-toggle>
       <mat-button-toggle (click)="setLanguage('pt')">
-        <img [src]="brazilian_logo_img" alt="brazil">
+        <span>{{'toolbar.language.portuguese' | translate}}</span>
       </mat-button-toggle>
     </mat-button-toggle-group>
   </div>

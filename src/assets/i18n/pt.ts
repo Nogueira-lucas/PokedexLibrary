@@ -9,6 +9,6 @@ export const PT_BR = {
     card: cardPt,
     toolbar: toolbarPt,
     storage: storagePT,
-    paginator: PAGINATOR
+    paginator: PAGINATOR,    
   }
 }

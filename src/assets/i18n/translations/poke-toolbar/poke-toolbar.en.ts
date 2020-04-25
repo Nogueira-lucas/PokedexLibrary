@@ -1,4 +1,8 @@
 export const toolbarEn = {
   title: 'Pokedex',
-  subtitle: 'lib'
+  subtitle: 'lib',
+  language: {
+    english: 'Inglês',
+    portuguese: 'Português'
+  } 
 }

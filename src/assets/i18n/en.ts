@@ -9,6 +9,6 @@ export const EN_US = {
     card: cardEn,
     toolBar: toolbarEn,
     storage: storageEN,
-    paginator: PAGINATOR
+    paginator: PAGINATOR,
   }
 }
