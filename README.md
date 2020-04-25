@@ -1,6 +1,6 @@
 # Pokedex Library
 - Projeto: listagem de pokemons consumindo API REST PokeAPI                 
-- Visualize: [Demo](https://nogueira-lucas.github.io/PokedexLibrary/)
+## [Visualizar](https://nogueira-lucas.github.io/PokedexLibrary/)
 
 Tecnologias utilizadas | Item/link
 ------------ | -------------
